@@ -6,11 +6,12 @@
     <title>Counter</title>
     <script>
 
+        const heading = document.querySelector('h1');
         function hello(){
-            if (document.querySelector('h1').innerHTML === "Hello!"){
-                document.querySelector('h1').innerHTML =  "Goodbye!";
+            if (heading.innerHTML === "Hello!"){
+                heading.innerHTML =  "Full Focus on this Course!";
             } else{
-                document.querySelector('h1').innerHTML =  "Hello!";
+                heading.innerHTML =  "Hello!";
             }
         }
 
