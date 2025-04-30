@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
-    <script>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Counter</title>
+     <script>
+ 
+         let counter = 0;
+         function count(){
+             counter++;
+             document.querySelector('h1').innerHTML = counter;
 
-        function hello(){
-        const heading = document.querySelector('h1');
-
-            if (heading.innerHTML === "Hello!"){
-                heading.innerHTML =  "Full Focus on this Course!";
-            } else{
-                heading.innerHTML =  "Hello!";
-            }
-        }
-
-    </script>
-</head>
-<body>
-    <h1>Hello!</h1>
-    <button onclick="hello()">Click here</button>
-
-    
-</body>
-</html>
+             if (counter % 10 === 0){
+                alert(`Count is now ${counter}`);
+             }
+         }
+ 
+     </script>
+ </head>
+ <body>
+     <h1>0!</h1>
+     <button onclick="count()">Count</button>
+     
+ </body>
+ </html>
